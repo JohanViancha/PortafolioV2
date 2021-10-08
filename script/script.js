@@ -1,7 +1,7 @@
 
 
 window.onload = () => {
-
+document.getElementsByClassName
     let animation_star = [];
     for(let i = 0; i<=100;i++){
         var star = document.createElement("div");
