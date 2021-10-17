@@ -14,6 +14,11 @@ document.getElementsByClassName
         container.appendChild(star);
     }
 
-}
+    console.log(window.screen.availWidth);
+    if(window.screen.availWidth <= 1226){
+       
+        description_about.innerHTML = "Me encanta la programación, actualmente trabajo como desarrollador web y estoy aprendiendo constantemente nuevas tecnologías. Tengo experiencia en pruebas funcionales.";
+    }
 
+}
 

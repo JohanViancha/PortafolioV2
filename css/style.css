@@ -15,9 +15,8 @@
 }
 
 
-.menu{
-    
-    width: 5vh;
+.menu{ 
+    width: 40px;
     height: 100vh;
     position:fixed;
     background-color: #C4C4C4;
@@ -29,7 +28,7 @@
 }
 
 .menu__icon{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #a40100;
     cursor: pointer;
 }
@@ -58,9 +57,10 @@
 
 
 
-.rectangle-photo{
-   background-color:C4C4C4;
+.rectangle-photo img{
+    width: 100%;
 }
+
 .object-background{
     position: absolute;
     top: 20vh;
@@ -82,6 +82,9 @@
     height: 350px;
     left: 25vw;
     background-color: #C4C4C4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .container-about{
@@ -95,6 +98,7 @@
     margin: 0px auto;
     height: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .download-cv{
@@ -240,14 +244,15 @@
     width: 88%;
 }
 .icon-ability{
-    width: 100%;
+    width: 90%;
     height: 30%;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 5vw;
     margin: 2em auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .icon-ability i{
@@ -283,7 +288,6 @@
 }
 .experience__content{
     display: grid;
-    width: 100%;
     height: 85vh;
     grid-template-columns: 1.25fr 0.5fr 1.25fr;
     grid-template-rows: 1fr 1fr;
@@ -303,15 +307,15 @@
 
 .description-experience{
     display: flex;
-    flex-direction: column;
-    width: 60%;
+    flex-direction: column;    
     height: 20vh;
     border:0.2em solid #a40100;
     border-radius: 1em;
     padding: 0.8em;
     box-sizing: border-box;
     justify-content: space-around;
-    margin: 0px auto;
+    margin: auto;
+    width: 70vh;
 }
 
 .second-experience{
@@ -395,19 +399,20 @@
     transform: rotate(-45deg);
     color: #a40100;
     position: absolute;
+    top: -8vh;
     left: -20px;
-    top: -5vh;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     animation: despegar 1.5s ease 0s infinite;
 }
 
-@keyframes despegar {
-    0%{
-        top: -5vh;
+@keyframes despegar{
+
+    0%{      
+         top: -8vh;
     }
     50%{
-        top: -10vh;
+        top: -12vh;
         
     }
 
@@ -471,11 +476,14 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    color: #FFF;    
+    color: #FFF;   
+    padding: 0px 0px 1em 0px; 
 }
 
 .description-proyect__description{
     padding: 2em;
+    line-height: 2em;
+    letter-spacing: 0.08em;
 }
 .description-proyect__title{
     padding: 1.2em;
@@ -498,9 +506,8 @@
 /** ------------------------ Contact ---------------------------**/
 
 .contact{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4em;
+    margin-top: 50px;
+    text-align: center;
 }
 .container-contact{
     display: flex;
@@ -528,6 +535,7 @@
     flex-direction: column;
     width: 50%;
     color: #C4C4C4;
+    padding: 5px;
 }
 
 .social-network a{
@@ -546,6 +554,7 @@
     border-left:3px solid #C4C4C4;
     align-items: center;
     width: 50%;
+    padding: 2px;
 }
 
 .social, .personal{
@@ -597,35 +606,45 @@ footer{
 
     .container-photo{
         width: 100%;
-        padding: 3em;
         box-sizing: border-box;
     }
     .object-background{
-        position: static;
+        position: inherit;
         margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 25vw;
-        height: 25vw;
+        width: 40%;
+        height: 40%;
     }
 
     .rectangle-photo{
        align-items: center;
        position: static;
        border-radius: 100%;
-       width: 24vw;
-       height: 24vw;
+       width: 20vw;
+       height: 19vw;
+       flex-direction: column;
     }
 
     .container-about{
-        gap: 30px;
-        width: 70%;
+        gap: 20px;
+        width: 90%;
     }
 
     .description-ability{
         width: 80%;
     }
+    
+    .rectangle-photo img{
+        width: 70%;
+    }
+
+    .description-experience{
+
+        height: 20vw;
+    }
+    
 }
 
 @media screen and (max-width:1226px){
@@ -646,7 +665,11 @@ footer{
         width: 70%;
     }
 
-
-
-
 }
+
+    @media screen and (max-width:901px){ 
+
+        .description-experience{
+            height: 40vh;
+        }
+    }

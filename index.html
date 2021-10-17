@@ -10,18 +10,20 @@
 </head>
 <body>
     <div class="menu">
-        <i class="menu__icon fas fa-home"></i>
-        <i class="menu__icon fas fa-align-left"></i>
-        <i class="menu__icon fas fa-briefcase"></i>
-        <i class="menu__icon fas fa-phone-alt"></i>
+        <a href="#home"><i class="menu__icon fas fa-home"></i></a> 
+        <a href="#ability"><i class="menu__icon fas fa-align-left"></i></a> 
+        <a href="#experience"><i class="menu__icon fas fa-briefcase"></i></a> 
+        <a href="#proyect"><i class="menu__icon fas fa-project-diagram"></i></a>
+        <a href="#contact"><i class="menu__icon fas fa-phone-alt"></i></a>
+
     </div>
     <div class="container" id="container">
         
-        <section class="container__home">
+        <section class="container__home" id="home">
             <div class="container-photo">
                 <div class="object-background">
                     <div class="rectangle-photo">
-                        <img src="" alt="Photo">
+                        <img src="./resource/img/foto.png" alt="Photo">
                     </div>
                 </div>
             </div>
@@ -29,7 +31,7 @@
             <div class="container-about">
                 <span class="hi">Hola! </span>
                <div><span class="hi">Soy</span> <h3 class="name"> Johan Ferney Viancha Abril</h3></div>
-                <p class="size-font-default"> Me encanta la programación, soy desarrollador frontend 
+                <p class="size-font-default" id="description_about"> Me encanta la programación, soy desarrollador frontend 
                     pero actualmente me encuentro en constante aprendizaje 
                     para ser un fullstack. Soy una persona proactiva, me 
                     relaciono facilmente con los demas, tengo buenas relaciones
@@ -43,7 +45,7 @@
             </div>
            
         </section>
-        <section class="ability">
+        <section class="ability" id="ability">
             <h3 class="title-section title-section-light">Habilidades</h3>
             <div class="object-ring"></div>
             <div class="container-ability">
@@ -152,7 +154,7 @@
             </div>
 
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
             <h3 class="title-section">Experiencia laboral</h3>
             <br>
            
@@ -178,7 +180,7 @@
 
 
         </section>
-        <section class="proyects">
+        <section class="proyects" id="proyect">
             <h3 class="title-section title-section-light">Proyectos</h3>
 
             <div class="content-proyects">
@@ -241,7 +243,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h3 class="title-section">Contacto</h3>
 
             <div class="container-contact">
