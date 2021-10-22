@@ -17,13 +17,28 @@
         <a href="#contact"><i class="menu__icon fas fa-phone-alt"></i></a>
 
     </div>
+    <div class="icon-burger" id="icon_burger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu-alter" id="menu_alter">
+        <div href="#" class="menu__icon--right" id="close_menu">
+            <i class="menu__icon  fas fa-times-circle"></i>
+        </div>
+        <a href="#home"><i class="menu__icon fas fa-home"></i>Home</a> 
+        <a href="#ability"><i class="menu__icon fas fa-align-left"></i>Habilidades</a> 
+        <a href="#experience"><i class="menu__icon fas fa-briefcase"></i>Experiencia</a> 
+        <a href="#proyect"><i class="menu__icon fas fa-project-diagram"></i>Proyectos</a>
+        <a href="#contact"><i class="menu__icon fas fa-phone-alt"></i>Contactos</a>
+
+    </div>
     <div class="container" id="container">
-        
         <section class="container__home" id="home">
+           
             <div class="container-photo">
+                <div id="leaks" class="leaks"></div>
                 <div class="object-background">
                     <div class="rectangle-photo">
-                        <img src="./resource/img/foto.png" alt="Photo">
+                        <img src="./resource/img/" alt="Photo">
                     </div>
                 </div>
             </div>
@@ -41,7 +56,7 @@
                     y los video juegos.
                 </p>
 
-                <button class="download-cv size-font-default">Descargar CV</button>
+                <a href="./resource/hoja de vida/Johan Ferney Viancha Abril.pdf" download=""><button class="download-cv size-font-default">Descargar CV</button></a>
             </div>
            
         </section>
@@ -160,7 +175,7 @@
            
             <div class="experience__content">
                 <div class="description-experience first-experience">
-                    <h4 class="name-company"><a href="https://www.linkedin.com/company/scitech_sas/about/" target="blank">SCIENCE & TECHNOLOGY SAS</a></h4>
+                    <a class="name-company" href="https://www.linkedin.com/company/scitech_sas/about/" target="blank"><h4>SCIENCE & TECHNOLOGY SAS</h4></a>
                     <span class="work-position">QA Tester</span>
                     <span class="time">Julio 2019 - Mayo 2021</span>
                 </div>
@@ -170,7 +185,7 @@
                     <i class="fas fa-star icon-medium second-star"></i>
                 </div>
                 <div class="description-experience second-experience">
-                    <h4 class="name-company"><a href="https://www.linkedin.com/company/worldpossolutions/" target="blank">World POS Solutions</a></h4>
+                    <a class="name-company" href="https://www.linkedin.com/company/worldpossolutions/" target="blank"><h4>World POS Solutions</h4></a>
                     <span class="work-position">Desarrollador Junior</span>
                     <span class="time">Mayo 2021 - Actualmente</span>
                 </div>
@@ -291,15 +306,19 @@
             
             
         </section>
+        <a href="#home">
+            <div class="content-return">
+                <i class="fas fa-rocket"></i> 
+            </div>
+        </a>
+    
+        <footer>
+            © Todos los derechos reservados - Johan Viancha - 2021
+        </footer>
     </div>
 
-    <div class="content-return">
-        <i class="fas fa-rocket"></i> 
-    </div>
-
-    <footer>
-        © Todos los derechos reservados - Johan Viancha - 2021
-    </footer>
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script/script.js" defer></script>
 </body>
 </html>
