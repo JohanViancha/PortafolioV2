@@ -408,7 +408,8 @@ html{
 .description-experience{
     display: flex;
     flex-direction: column;    
-    height: 20vh;
+    height: 100%;
+    overflow: hidden;
     border:0.2em solid #a40100;
     border-radius: 1em;
     padding: 0.8em;
