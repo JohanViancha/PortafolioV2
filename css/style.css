@@ -1,13 +1,16 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Montserrat', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+span,p{
+    font-family: 'Cambria', cursive;
+}
 /**--------------- Home ------------------- **/
 
 .star{
@@ -60,7 +63,6 @@ html{
     justify-content: space-between;
     background-color: #C4C4C4;
     display: flex;
-    padding: 6%;
     box-sizing: border-box;
     z-index: 4;
     box-shadow: 0px 5px 10px 0px #12233c;
@@ -76,9 +78,14 @@ html{
     display: flex;
     justify-content: start;
     column-gap: 20%;
+    padding: 3em;
+    border-radius: 1em;
+
 }
 
-
+.menu-alter a:hover{
+    background-color: #FFF;
+}
 .icon-burger{
     position: absolute;
     color: #a40100;
@@ -116,6 +123,7 @@ html{
 
 .menu__icon--right{
     align-self:flex-end;
+    padding: 20px;
 }
 .container{
     overflow: hidden;
@@ -434,8 +442,8 @@ html{
     position: absolute;
     color: #a40100;
     background-color: #FFF;
-    padding: 1rem;
-    left: -30px;
+    padding: 0.5rem;
+    left: -24px;
 }
 
 .icon-medium{
@@ -676,13 +684,54 @@ html{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
+
 }
 
 .contact__information{
-    width: 70%;
-    display: flex;
+    width: 60%;
+    height: 80%;
     padding: 2em;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circle{
+    position: absolute;
+    border: 1px solid #12233c;
+    border-radius: 100%;
+}
+
+.circle-second{
+    width: 80%;
+    height: 80%;
+}
+.circle-third{
+    width: 60%;
+    height: 60%;
+}
+
+.circle-fourth{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    background-color: #a40100;
+    border-radius: 100%;
+}
+
+.point-second{
+    left: 50%;
 }
 
 .social{
@@ -695,7 +744,7 @@ html{
     display: flex;
     justify-content:space-evenly;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     color: #C4C4C4;
     padding: 5px;
 }
@@ -709,15 +758,6 @@ html{
     color: #a40100;
 }
 
-.information-personal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-left:3px solid #C4C4C4;
-    align-items: center;
-    width: 50%;
-    padding: 2px;
-}
 
 .social, .personal{
     font-size: 1.1rem;
@@ -727,19 +767,6 @@ html{
     font-size: 1.5rem;
 }
 
-.image-planet{
-    text-align: center;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.image-planet img{
-    width: 100%;
-    top: 50px;
-
-}
 /** -----------------------------------------------------------**/
 
 
@@ -763,7 +790,7 @@ footer{
 @media screen and (max-width:1516px){
     
     .container__home{
-        background-image: radial-gradient( circle 900px at 51.2% 130%, #C4C4C4 90% , rgba(18,35,60,1) 30%);
+        background-image: radial-gradient( circle 100vh at 51.2% 130%, #C4C4C4 90% , rgba(18,35,60,1) 30%);
 
     }
 
@@ -858,4 +885,10 @@ footer{
             display: block;
         }
      
-}
+    }
+    @media screen and (max-width:640px){ 
+
+        .description-experience {
+            width: 90%;
+        }
+    }

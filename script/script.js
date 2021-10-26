@@ -81,14 +81,8 @@ const animaStar = ()=>{
         let width = Math.ceil(Math.random()*5);
         let top = 0;
         let left = 0;
-        if(screen.width >= 1516){
-            top = Math.ceil(Math.random()*screen.height-10);
-            left = Math.ceil(Math.random()*screen.width-1200);
-        }else{
-            top = Math.ceil(Math.random()*screen.width-1200);
-            left = Math.ceil(Math.random()*screen.height-10);
-        }
-        
+        top = Math.ceil(Math.random()*screen.height-10);
+        left = Math.ceil(Math.random()*screen.width-100);        
         star.style.cssText = `width:${width}px;height:${width}px;top:${top}px;left:${left}px; z-index:0`;
         container.appendChild(star);
     }
