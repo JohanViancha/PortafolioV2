@@ -46,6 +46,7 @@ window.onload = () => {
 
     animaStar();
 
+    console.log(window.screen.availWidth);
     if(window.screen.availWidth <= 1226){
        
         description_about.innerHTML = "Me encanta la programación, actualmente trabajo como desarrollador web y estoy aprendiendo constantemente nuevas tecnologías. Tengo experiencia en pruebas funcionales.";
@@ -81,9 +82,9 @@ const animaStar = ()=>{
         let width = Math.ceil(Math.random()*5);
         let top = 0;
         let left = 0;
-        top = Math.ceil(Math.random()*screen.height-10);
-        left = Math.ceil(Math.random()*screen.width-100);        
-        star.style.cssText = `width:${width}px;height:${width}px;top:${top}px;left:${left}px; z-index:0`;
+        top = Math.ceil(Math.random()*100);
+        left = Math.ceil(Math.random()*96);        
+        star.style.cssText = `width:${width}px;height:${width}px;top:${top}vh;left:${left}vw; z-index:0`;
         container.appendChild(star);
     }
 
