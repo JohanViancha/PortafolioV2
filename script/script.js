@@ -30,7 +30,7 @@ sr.reveal('.icon-ability',{
     duration: 2000,
     origin:'top',
     distance:'-40%',
-    delay:400
+    delay:300
 });
 
 

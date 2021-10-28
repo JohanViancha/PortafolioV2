@@ -9,12 +9,12 @@ html{
 }
 
 span,p{
-    font-family: 'Cambria', cursive;
+    font-family: 'Cambria';
 }
 /**--------------- Home ------------------- **/
 
 .star{
-    background-color: #ffffff;
+    background-color: #c4c4c4;
     border-radius: 10px;
     position: absolute;
     
@@ -204,6 +204,8 @@ span,p{
     height: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    z-index: 1;
+
 }
 
 .download-cv{
@@ -250,7 +252,7 @@ span,p{
 .ability{
     background-color: #a40100;
     text-align: center;
-    padding: 3% 4% 3% 6%;
+    padding: 5% 4% 3% 6%;
     z-index: 1;
 }
 
@@ -967,7 +969,7 @@ footer{
             display: block;
         }
         .ability{
-            padding: 3% 4% 3% 3%;
+            padding: 15% 4% 3% 3%;
         }
      
     }
