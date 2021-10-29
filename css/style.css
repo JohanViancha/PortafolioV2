@@ -54,13 +54,13 @@ span,p{
 }
 
 .menu-alter{
-    width: 40vw;
+    width: 30%;
     height: 100%;
     overflow: hidden;
     flex-direction: column;
     position: fixed;
-    left: -41vw;
-    justify-content: space-between;
+    left: -50%;
+    justify-content: space-around;
     background-color: #C4C4C4;
     display: flex;
     box-sizing: border-box;
@@ -78,7 +78,7 @@ span,p{
     display: flex;
     justify-content: start;
     column-gap: 20%;
-    padding: 3em;
+    padding: 10%;
     border-radius: 1em;
 
 }
@@ -292,6 +292,9 @@ span,p{
     box-shadow: 2px 3px 13px -3px #000;
 }
 
+.description-ability p{
+    text-align: left;
+}
 .progress{
     display: flex;
     justify-content: space-around;
@@ -311,6 +314,7 @@ span,p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:3%;
 }
 
 .progress-bar__parent{
@@ -347,6 +351,9 @@ span,p{
 
 .children-angular{
     width: 82%;
+}
+.children-php{
+    width: 79%;
 }
 
 .children-javascript{
@@ -398,7 +405,7 @@ span,p{
 }
 .experience__content{
     display: grid;
-    height: 85vh;
+    height: 100vh;
     grid-template-columns: 1.25fr 0.5fr 1.25fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 80px;
@@ -411,23 +418,27 @@ span,p{
     border-radius: 5em;
     height: 100%;
     grid-column: 2 / 3;
-    grid-row:  1 / 3;
+    grid-row:  1 / 4;
     position: relative;
 }
 
 .description-experience{
     display: flex;
     flex-direction: column;    
-    height: 100%;
+    height: 90%;
     overflow: hidden;
     border:0.2em solid #a40100;
     border-radius: 1em;
-    padding: 0.8em;
-    box-sizing: border-box;
+    padding: 0.4em;
     justify-content: space-around;
     margin: auto;
     width: 60vh;
     gap: 20px;
+}
+
+.first-experience{
+    grid-column: 1 / 2;
+    grid-row: 1/ 2;
 }
 
 .second-experience{
@@ -435,9 +446,17 @@ span,p{
     grid-row: 2 / 3;
 }
 
+.third-experience{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
 .second-star{
-    top: 50%;
- 
+    top: 37%;
+}
+
+.third-star{
+    top:74%;
 }
 
 .fa-star{
@@ -544,21 +563,19 @@ span,p{
     font-size: 3rem;
     transform: rotate(-45deg);
     color: #a40100;
-    position: absolute;
-    top: -8vh;
-    left: -20px;
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    margin: auto;
     animation: despegar 1.5s ease 0s infinite;
+    top: 0px;
+    position: relative;
 }
 
 @keyframes despegar{
 
     0%{      
-         top: -8vh;
+         top: 0px;
     }
     50%{
-        top: -12vh;
+        top:60px;
         
     }
 
@@ -739,7 +756,7 @@ span,p{
     background-color: #a40100;
     border-radius: 100%;
     position: absolute;
-
+    z-index: 1;
 }
 
 @keyframes inacircle {
@@ -753,28 +770,29 @@ span,p{
 }
 
 .point-second{
-    left: 30%;
-    top: 0%;
+    left: 47%;
+    top: -2.5%;
 }
 
 .point-first{
-    left: 30%;
-    top: 95%;
+    left: 47%;
+    top: 97%;
 }
 
 .point-third{
-    left: -5.5%;
-    top: 21%;
+    left: 12.5%;
+    top: -1%;
 }
 
 .point-forty{
     left: 80%;
-    top: 21%;
+    top: 8.8vh;
+
 }
 
 .point-sixth{
     left: 50%;
-    top: -8px;
+    top: -2.5vh;
 }
 
 .contact-network{
@@ -793,7 +811,7 @@ span,p{
     top: -80px;
     left: -100px;
     text-decoration: none;
-    z-index: 1;
+    z-index: 3;
 }
 
 .contact-network:hover{
@@ -863,6 +881,9 @@ footer{
     justify-content: center;
     font-weight: bolder;
     color: #C4C4C4;
+    padding: 10px;
+    text-align: center;
+;
 }
 
 
@@ -948,18 +969,14 @@ footer{
 }
 
     @media screen and (max-width:901px){ 
-
-        .description-experience{
-            height: 30vh;
-        }
-
         .rectangle-photo{
-            width: 25vw;
-            height: 24vw;
+            width: 30vw;
+            height: 29vw;
          }
 
          .object-background{
             top: 80px;
+            width: 60%;
         }
 
         .menu{
@@ -978,6 +995,65 @@ footer{
         .description-experience {
             width: 90%;
         }
+        .rectangle-photo{
+            width: 60vw;
+            height: 60vw;
+         }
+         .description-experience{
+            height: 20vh;
+        }
+
+         .object-background{
+            top: 80px;
+            width: 90%;
+        }
+        .menu-alter{
+            width: 50%;
+        }
+
+        .proyects{
+            padding: 1rem;
+        }
+        
+        .point-forty{
+            left: 50%;
+            top: 9vh;
+        }
+
+        .point-third{
+            left: 50%;
+            top:-40px;
+        }
+
+        .point-content{
+            width: 0px;
+        }
+
+        .base{
+            display: none !important;
+        }
+        .experience__content{
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rocket{
+            top: 5vh;
+            animation: despegar 1.5s ease 0s infinite;
+        }
+
+        @keyframes despegar{
+        
+            0%{      
+                top:5vh;
+            }
+            50%{
+                top: 10vh;
+                
+            }
+        
+        }
     }
 
     @media screen and (max-width:500px){ 
@@ -989,8 +1065,8 @@ footer{
         
         .container-about{
             width: 100%;
-            padding: 20px;
-            gap: 7px;
+            padding: 5px;
+            gap: 0px;
         }
 
         .time{
@@ -1004,5 +1080,37 @@ footer{
         .name-company{
             font-size: 1.1rem;
         }
+
+        .title-section{
+            margin: 0px auto 1em auto;
+        }
+
+        .experience{
+            margin: 0em 0px;
+        }
        
+        .menu-alter, .menu-alter i{
+            font-size: 0.9rem;
+        }
+
+        .contact__information{
+            margin-top: 25%;
+        }
+
+        .photo-circle {
+            bottom: -39vh;
+        }
+     
+      
+    }
+
+
+    @media screen and (max-width:321px){ 
+        .size-font-default{
+            font-size: 1rem;
+        }
+
+        .hi, .name {
+            font-size: 1.5rem;
+        }
     }

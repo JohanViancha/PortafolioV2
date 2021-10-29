@@ -45,17 +45,12 @@ sr.reveal('.experience',{
 window.onload = () => {
 
     animaStar();
-
-    console.log(window.screen.availWidth);
-    if(window.screen.availWidth <= 1226){
-       
+    if(window.screen.availWidth <= 1226){      
         description_about.innerHTML = "Me encanta la programación, actualmente trabajo como desarrollador web y estoy aprendiendo constantemente nuevas tecnologías. Tengo experiencia en pruebas funcionales.";
     }
 
     
 }
-
-
 
     icon_burger.addEventListener("click",()=>{
         
@@ -65,7 +60,7 @@ window.onload = () => {
 
 
     close_menu.addEventListener("click",()=>{
-        menu_alter.style.cssText = `left:-40vw`;
+        menu_alter.style.cssText = `left:-50%`;
     }, false);
 
 
@@ -79,7 +74,13 @@ const animaStar = ()=>{
         var star = document.createElement("div");
         star.classList.add('star');    
         animation_star.push(star); 
-        let width = Math.ceil(Math.random()*5);
+        let width =0;
+        if(window.screen.availWidth <= 700){  
+            width = Math.ceil(Math.random()*2);
+        }else{
+            width = Math.ceil(Math.random()*5);
+        }
+       
         let top = 0;
         let left = 0;
         top = Math.ceil(Math.random()*100);
@@ -95,12 +96,6 @@ const animaStar = ()=>{
 
     setInterval(()=>{
         const positionTop = Math.ceil(Math.random()*50);
-        if(positionTop % 2 === 0){
-            leaks.style.right = `-30px`
-        }else{
-            leaks.style.left = `-30px`
-        }
-
         leaks.style.cssText = `top:${positionTop}%;transform: rotate(20deg); animation: leaksStar 1.5s linear 1 normal;`;
         
         setTimeout(()=>{
